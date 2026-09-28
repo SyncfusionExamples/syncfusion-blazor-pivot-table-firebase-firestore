@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository demonstrates how to bind Firebase Firestore data to the Syncfusion Blazor Pivot Table through an ASP.NET Core API and the URL Adaptor. The sample uses the Google.Cloud.Firestore library to load and persist documents from an Orders collection, while the Pivot Table consumes the API through SfDataManager.
+This repository demonstrates how to bind Firebase Firestore data to the Syncfusion [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) through an ASP.NET Core API and the URL Adaptor. The sample uses the Google.Cloud.Firestore library to load and persist documents from an Orders collection, while the Pivot Table consumes the API through SfDataManager.
 
 The implementation follows the current guide-based pattern where the UI requests data from the server, and the server handles Firestore access, validation, and CRUD operations. This keeps the component focused on aggregation and editing while the API manages persistence.
 
@@ -310,8 +310,17 @@ private void BeginDrillThrough(BeginDrillThroughEventArgs args)
 
 ## Full Documentation
 
-For the complete step-by-step guide, including URL Adaptor configuration, CRUD mappings, and Firebase Firestore connection setup, see the official Syncfusion Blazor Pivot Table documentation.
+For the complete step-by-step guide, including URL Adaptor configuration, CRUD mappings, and Firebase Firestore connection setup, see the official Syncfusion Blazor Pivot Table documentation: https://help.syncfusion.com/grid-sdk/blazor/pivot-table/connecting-to-data-source/firebase-firestore. 
 
 ## Summary
 
 This sample demonstrates how to bind Firebase Firestore data to the Syncfusion Blazor Pivot Table through an ASP.NET Core API and the URL Adaptor. The controller uses Google.Cloud.Firestore to read, insert, update, and delete documents in the `Orders` collection, while the Pivot Table performs aggregation and editing on the client. The same-origin relative URLs and primary key configuration keep the remote binding simple and secure, and the `[FirestoreData]` model attributes map .NET properties to Firestore document fields for clean CRUD handling.
+
+## Support and Feedback
+
+- For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
+- To report an issue specific to this sample, open a GitHub issue in this repository.
+
+## License
+
+This is a Syncfusion sample project provided to demonstrate product usage. Review the [Syncfusion license terms](https://www.syncfusion.com/sales/pricing?category=ui-components) before using Syncfusion components in your own applications.
